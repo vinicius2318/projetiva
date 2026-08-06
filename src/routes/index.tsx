@@ -289,9 +289,9 @@ function Index() {
       {/* ---------------- sobre ---------------- */}
       <section id="sobre" className="border-t border-border py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-16 px-5 md:grid-cols-[0.85fr_1.15fr]">
-          <div className="relative aspect-4/5 overflow-hidden bg-onyx shadow-elegant">
+          <div className="relative aspect-4/5 overflow-hidden bg-secondary shadow-elegant">
             <div className="absolute inset-0 flex items-center justify-center">
-              <img src={logoLight.url} alt="Marca Projetiva" className="w-3/5" />
+              <img src={logoDark.url} alt="Marca Projetiva" className="w-3/5" />
             </div>
             <div className="absolute bottom-6 left-6 bg-primary px-4 py-3 text-[0.75rem] font-bold uppercase tracking-[0.14em] text-primary-foreground">
               Precisão em cada corte
@@ -366,19 +366,19 @@ function Index() {
       </section>
 
       {/* ---------------- serviços ---------------- */}
-      <section id="servicos" className="bg-onyx py-24 text-cream">
+      <section id="servicos" className="bg-secondary py-24 text-foreground">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mx-auto max-w-xl text-center">
             <p className="eyebrow">O que produzimos</p>
             <h2 className="mt-4 text-[clamp(2rem,4vw,2.7rem)] font-light">Serviços</h2>
-            <p className="mt-4 text-cream/60">Soluções completas em comunicação visual, do projeto à instalação.</p>
+            <p className="mt-4 text-muted-foreground">Soluções completas em comunicação visual, do projeto à instalação.</p>
           </div>
           <div className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
             {servicos.map((s) => (
-              <div key={s.t} className="bg-onyx-soft p-10 transition-colors hover:bg-onyx">
+              <div key={s.t} className="bg-card p-10 transition-colors hover:bg-muted">
                 <Icon d={s.p} className="h-8 w-8 text-primary" />
                 <h3 className="mt-6 text-lg font-semibold">{s.t}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-cream/55">{s.d}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
               </div>
             ))}
           </div>
@@ -405,11 +405,11 @@ function Index() {
               ))}
             </div>
           </div>
-          <div className="bg-onyx p-14 text-center text-cream shadow-elegant">
+          <div className="bg-secondary p-14 text-center text-foreground shadow-elegant">
             <div className="text-2xl tracking-[6px] text-primary">★★★★★</div>
             <strong className="mt-3 block font-display text-6xl font-light">5.0</strong>
-            <span className="text-sm text-cream/60">Nota média das avaliações</span>
-            <div className="mt-6 inline-block border border-line px-5 py-2 text-xs tracking-wide text-accent">
+            <span className="text-sm text-muted-foreground">Nota média das avaliações</span>
+            <div className="mt-6 inline-block border border-line px-5 py-2 text-xs tracking-wide text-primary">
               Google · 13 avaliações
             </div>
           </div>
@@ -445,8 +445,8 @@ function Index() {
             <p className="eyebrow">Onde estamos</p>
             <h2 className="mt-4 text-[clamp(2rem,4vw,2.7rem)] font-light">Localização</h2>
           </div>
-          <div className="mt-14 grid shadow-elegant md:grid-cols-2">
-            <div className="flex flex-col justify-center bg-onyx p-12 text-cream">
+          <div className="mt-14 grid overflow-hidden border border-line shadow-elegant md:grid-cols-2">
+            <div className="flex flex-col justify-center bg-card p-12 text-foreground">
               <p className="eyebrow">Projetiva Comunicação Visual</p>
               <h3 className="mt-3 text-2xl font-light">Atendimento em Campo Mourão e região</h3>
 
@@ -454,7 +454,7 @@ function Index() {
                 <Icon d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" className="mt-1 h-5 w-5 min-w-5 text-primary" />
                 <div>
                   <strong className="block text-sm">Endereço</strong>
-                  <a href={MAPS_LINK} target="_blank" rel="noopener" className="text-sm text-cream/70 hover:text-primary">
+                  <a href={MAPS_LINK} target="_blank" rel="noopener" className="text-sm text-muted-foreground hover:text-primary">
                     {ADDRESS}
                   </a>
                 </div>
@@ -464,7 +464,7 @@ function Index() {
                 <Icon d="M12 7v5l3 3" className="mt-1 h-5 w-5 min-w-5 text-primary" />
                 <div>
                   <strong className="block text-sm">Horário</strong>
-                  <span className="text-sm text-cream/70">Atendimento comercial · fecha às 18h</span>
+                  <span className="text-sm text-muted-foreground">Atendimento comercial · fecha às 18h</span>
                 </div>
               </div>
 
@@ -475,7 +475,7 @@ function Index() {
                 />
                 <div>
                   <strong className="block text-sm">Telefone</strong>
-                  <a href={`tel:${PHONE_TEL}`} className="text-sm text-cream/70 hover:text-primary">
+                  <a href={`tel:${PHONE_TEL}`} className="text-sm text-muted-foreground hover:text-primary">
                     {PHONE_DISPLAY}
                   </a>
                 </div>
@@ -493,7 +493,7 @@ function Index() {
                 </a>
                 <a
                   href={`tel:${PHONE_TEL}`}
-                  className="inline-flex items-center gap-2 border border-line px-6 py-3.5 text-[0.75rem] font-bold uppercase tracking-[0.16em] text-cream"
+                  className="inline-flex items-center gap-2 border border-line px-6 py-3.5 text-[0.75rem] font-bold uppercase tracking-[0.16em] text-foreground hover:bg-secondary"
                 >
                   Ligar agora
                 </a>
@@ -541,19 +541,19 @@ function Index() {
       </section>
 
       {/* ---------------- footer ---------------- */}
-      <footer className="bg-onyx pb-8 pt-20 text-cream/70">
+      <footer className="border-t border-line bg-background pb-8 pt-20 text-muted-foreground">
         <div className="mx-auto max-w-6xl px-5">
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
             <div>
-              <img src={logoLight.url} alt="Projetiva Comunicação Visual" className="h-16 w-auto" />
-              <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/50">
+              <img src={logoDark.url} alt="Projetiva Comunicação Visual" className="h-16 w-auto" />
+              <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
                 Comunicação visual premium em Campo Mourão/PR — letreiros, painéis e fachadas que dão presença real à
                 sua marca.
               </p>
             </div>
             <div>
-              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-cream">Navegação</h4>
-              <ul className="mt-5 space-y-3 text-sm text-cream/55">
+              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-foreground">Navegação</h4>
+              <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 {navItems.map((i) => (
                   <li key={i.href}>
                     <a href={i.href} className="hover:text-primary">
@@ -564,8 +564,8 @@ function Index() {
               </ul>
             </div>
             <div>
-              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-cream">Contato</h4>
-              <ul className="mt-5 space-y-3 text-sm text-cream/55">
+              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-foreground">Contato</h4>
+              <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 <li>
                   <a href={`tel:${PHONE_TEL}`} className="hover:text-primary">
                     {PHONE_DISPLAY}
@@ -580,8 +580,8 @@ function Index() {
               </ul>
             </div>
             <div>
-              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-cream">Endereço</h4>
-              <address className="mt-5 not-italic text-sm leading-relaxed text-cream/55">
+              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-foreground">Endereço</h4>
+              <address className="mt-5 not-italic text-sm leading-relaxed text-muted-foreground">
                 <a href={MAPS_LINK} target="_blank" rel="noopener" className="hover:text-primary">
                   R. Francisco Ferreira Albuquerque, 720
                   <br />
@@ -593,14 +593,14 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-14 border-t border-cream/10 pt-8 text-center">
-            <p className="text-sm text-cream/70">
-              <span className="font-semibold text-cream">Projetiva Comunicação Visual</span> — {ADDRESS} ·{" "}
+          <div className="mt-14 border-t border-border pt-8 text-center">
+            <p className="text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">Projetiva Comunicação Visual</span> — {ADDRESS} ·{" "}
               <a href={`tel:${PHONE_TEL}`} className="text-primary hover:underline">
                 {PHONE_DISPLAY}
               </a>
             </p>
-            <p className="mt-3 text-xs text-cream/35">
+            <p className="mt-3 text-xs text-muted-foreground/70">
               © {new Date().getFullYear()} Projetiva Comunicação Visual. Todos os direitos reservados.
             </p>
           </div>
