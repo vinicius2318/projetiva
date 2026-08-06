@@ -541,19 +541,19 @@ function Index() {
       </section>
 
       {/* ---------------- footer ---------------- */}
-      <footer className="bg-onyx pb-8 pt-20 text-cream/70">
+      <footer className="border-t border-line bg-background pb-8 pt-20 text-muted-foreground">
         <div className="mx-auto max-w-6xl px-5">
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
             <div>
-              <img src={logoLight.url} alt="Projetiva Comunicação Visual" className="h-16 w-auto" />
-              <p className="mt-5 max-w-xs text-sm leading-relaxed text-cream/50">
+              <img src={logoDark.url} alt="Projetiva Comunicação Visual" className="h-16 w-auto" />
+              <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
                 Comunicação visual premium em Campo Mourão/PR — letreiros, painéis e fachadas que dão presença real à
                 sua marca.
               </p>
             </div>
             <div>
-              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-cream">Navegação</h4>
-              <ul className="mt-5 space-y-3 text-sm text-cream/55">
+              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-foreground">Navegação</h4>
+              <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 {navItems.map((i) => (
                   <li key={i.href}>
                     <a href={i.href} className="hover:text-primary">
@@ -564,8 +564,8 @@ function Index() {
               </ul>
             </div>
             <div>
-              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-cream">Contato</h4>
-              <ul className="mt-5 space-y-3 text-sm text-cream/55">
+              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-foreground">Contato</h4>
+              <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 <li>
                   <a href={`tel:${PHONE_TEL}`} className="hover:text-primary">
                     {PHONE_DISPLAY}
@@ -580,8 +580,8 @@ function Index() {
               </ul>
             </div>
             <div>
-              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-cream">Endereço</h4>
-              <address className="mt-5 not-italic text-sm leading-relaxed text-cream/55">
+              <h4 className="text-[0.72rem] font-bold uppercase tracking-[0.2em] text-foreground">Endereço</h4>
+              <address className="mt-5 not-italic text-sm leading-relaxed text-muted-foreground">
                 <a href={MAPS_LINK} target="_blank" rel="noopener" className="hover:text-primary">
                   R. Francisco Ferreira Albuquerque, 720
                   <br />
@@ -593,14 +593,14 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-14 border-t border-cream/10 pt-8 text-center">
-            <p className="text-sm text-cream/70">
-              <span className="font-semibold text-cream">Projetiva Comunicação Visual</span> — {ADDRESS} ·{" "}
+          <div className="mt-14 border-t border-border pt-8 text-center">
+            <p className="text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">Projetiva Comunicação Visual</span> — {ADDRESS} ·{" "}
               <a href={`tel:${PHONE_TEL}`} className="text-primary hover:underline">
                 {PHONE_DISPLAY}
               </a>
             </p>
-            <p className="mt-3 text-xs text-cream/35">
+            <p className="mt-3 text-xs text-muted-foreground/70">
               © {new Date().getFullYear()} Projetiva Comunicação Visual. Todos os direitos reservados.
             </p>
           </div>
