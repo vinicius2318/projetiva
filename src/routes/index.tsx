@@ -445,8 +445,8 @@ function Index() {
             <p className="eyebrow">Onde estamos</p>
             <h2 className="mt-4 text-[clamp(2rem,4vw,2.7rem)] font-light">Localização</h2>
           </div>
-          <div className="mt-14 grid shadow-elegant md:grid-cols-2">
-            <div className="flex flex-col justify-center bg-onyx p-12 text-cream">
+          <div className="mt-14 grid overflow-hidden border border-line shadow-elegant md:grid-cols-2">
+            <div className="flex flex-col justify-center bg-card p-12 text-foreground">
               <p className="eyebrow">Projetiva Comunicação Visual</p>
               <h3 className="mt-3 text-2xl font-light">Atendimento em Campo Mourão e região</h3>
 
@@ -454,7 +454,7 @@ function Index() {
                 <Icon d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" className="mt-1 h-5 w-5 min-w-5 text-primary" />
                 <div>
                   <strong className="block text-sm">Endereço</strong>
-                  <a href={MAPS_LINK} target="_blank" rel="noopener" className="text-sm text-cream/70 hover:text-primary">
+                  <a href={MAPS_LINK} target="_blank" rel="noopener" className="text-sm text-muted-foreground hover:text-primary">
                     {ADDRESS}
                   </a>
                 </div>
@@ -464,7 +464,7 @@ function Index() {
                 <Icon d="M12 7v5l3 3" className="mt-1 h-5 w-5 min-w-5 text-primary" />
                 <div>
                   <strong className="block text-sm">Horário</strong>
-                  <span className="text-sm text-cream/70">Atendimento comercial · fecha às 18h</span>
+                  <span className="text-sm text-muted-foreground">Atendimento comercial · fecha às 18h</span>
                 </div>
               </div>
 
@@ -475,7 +475,7 @@ function Index() {
                 />
                 <div>
                   <strong className="block text-sm">Telefone</strong>
-                  <a href={`tel:${PHONE_TEL}`} className="text-sm text-cream/70 hover:text-primary">
+                  <a href={`tel:${PHONE_TEL}`} className="text-sm text-muted-foreground hover:text-primary">
                     {PHONE_DISPLAY}
                   </a>
                 </div>
@@ -493,7 +493,7 @@ function Index() {
                 </a>
                 <a
                   href={`tel:${PHONE_TEL}`}
-                  className="inline-flex items-center gap-2 border border-line px-6 py-3.5 text-[0.75rem] font-bold uppercase tracking-[0.16em] text-cream"
+                  className="inline-flex items-center gap-2 border border-line px-6 py-3.5 text-[0.75rem] font-bold uppercase tracking-[0.16em] text-foreground hover:bg-secondary"
                 >
                   Ligar agora
                 </a>
