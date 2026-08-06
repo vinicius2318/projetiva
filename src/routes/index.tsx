@@ -289,9 +289,9 @@ function Index() {
       {/* ---------------- sobre ---------------- */}
       <section id="sobre" className="border-t border-border py-24">
         <div className="mx-auto grid max-w-6xl items-center gap-16 px-5 md:grid-cols-[0.85fr_1.15fr]">
-          <div className="relative aspect-4/5 overflow-hidden bg-onyx shadow-elegant">
+          <div className="relative aspect-4/5 overflow-hidden bg-secondary shadow-elegant">
             <div className="absolute inset-0 flex items-center justify-center">
-              <img src={logoLight.url} alt="Marca Projetiva" className="w-3/5" />
+              <img src={logoDark.url} alt="Marca Projetiva" className="w-3/5" />
             </div>
             <div className="absolute bottom-6 left-6 bg-primary px-4 py-3 text-[0.75rem] font-bold uppercase tracking-[0.14em] text-primary-foreground">
               Precisão em cada corte
@@ -366,19 +366,19 @@ function Index() {
       </section>
 
       {/* ---------------- serviços ---------------- */}
-      <section id="servicos" className="bg-onyx py-24 text-cream">
+      <section id="servicos" className="bg-secondary py-24 text-foreground">
         <div className="mx-auto max-w-6xl px-5">
           <div className="mx-auto max-w-xl text-center">
             <p className="eyebrow">O que produzimos</p>
             <h2 className="mt-4 text-[clamp(2rem,4vw,2.7rem)] font-light">Serviços</h2>
-            <p className="mt-4 text-cream/60">Soluções completas em comunicação visual, do projeto à instalação.</p>
+            <p className="mt-4 text-muted-foreground">Soluções completas em comunicação visual, do projeto à instalação.</p>
           </div>
           <div className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
             {servicos.map((s) => (
-              <div key={s.t} className="bg-onyx-soft p-10 transition-colors hover:bg-onyx">
+              <div key={s.t} className="bg-card p-10 transition-colors hover:bg-muted">
                 <Icon d={s.p} className="h-8 w-8 text-primary" />
                 <h3 className="mt-6 text-lg font-semibold">{s.t}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-cream/55">{s.d}</p>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.d}</p>
               </div>
             ))}
           </div>
@@ -405,11 +405,11 @@ function Index() {
               ))}
             </div>
           </div>
-          <div className="bg-onyx p-14 text-center text-cream shadow-elegant">
+          <div className="bg-secondary p-14 text-center text-foreground shadow-elegant">
             <div className="text-2xl tracking-[6px] text-primary">★★★★★</div>
             <strong className="mt-3 block font-display text-6xl font-light">5.0</strong>
-            <span className="text-sm text-cream/60">Nota média das avaliações</span>
-            <div className="mt-6 inline-block border border-line px-5 py-2 text-xs tracking-wide text-accent">
+            <span className="text-sm text-muted-foreground">Nota média das avaliações</span>
+            <div className="mt-6 inline-block border border-line px-5 py-2 text-xs tracking-wide text-primary">
               Google · 13 avaliações
             </div>
           </div>
