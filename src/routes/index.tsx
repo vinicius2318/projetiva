@@ -445,12 +445,12 @@ function Index() {
             <p className="eyebrow">Onde estamos</p>
             <h2 className="mt-4 text-[clamp(2rem,4vw,2.7rem)] font-light">Localização</h2>
           </div>
-          <div className="mx-auto mt-14 max-w-3xl overflow-hidden border border-line bg-card shadow-elegant">
-            <div className="p-10 text-foreground sm:p-12">
+          <div className="mx-auto mt-14 max-w-2xl overflow-hidden border border-line bg-card shadow-elegant">
+            <div className="px-10 py-12 text-center text-foreground sm:px-14">
               <p className="eyebrow">Projetiva Comunicação Visual</p>
               <h3 className="mt-3 text-2xl font-light">Atendimento em Campo Mourão e região</h3>
 
-              <div className="mt-8 flex items-start gap-4">
+              <div className="mx-auto mt-8 flex max-w-md items-start gap-4 text-left">
                 <Icon d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0z" className="mt-1 h-5 w-5 min-w-5 text-primary" />
                 <div>
                   <strong className="block text-sm">Endereço</strong>
@@ -460,7 +460,7 @@ function Index() {
                 </div>
               </div>
 
-              <div className="mt-5 flex items-start gap-4">
+              <div className="mx-auto mt-5 flex max-w-md items-start gap-4 text-left">
                 <Icon d="M12 7v5l3 3" className="mt-1 h-5 w-5 min-w-5 text-primary" />
                 <div>
                   <strong className="block text-sm">Horário</strong>
@@ -468,7 +468,7 @@ function Index() {
                 </div>
               </div>
 
-              <div className="mt-5 flex items-start gap-4">
+              <div className="mx-auto mt-5 flex max-w-md items-start gap-4 text-left">
                 <Icon
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
                   className="mt-1 h-5 w-5 min-w-5 text-primary"
@@ -481,7 +481,7 @@ function Index() {
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-8 flex flex-wrap justify-center gap-3">
                 <a
                   href={WA_DEFAULT}
                   target="_blank"
