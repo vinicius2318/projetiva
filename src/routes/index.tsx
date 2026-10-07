@@ -445,8 +445,8 @@ function Index() {
             <p className="eyebrow">Onde estamos</p>
             <h2 className="mt-4 text-[clamp(2rem,4vw,2.7rem)] font-light">Localização</h2>
           </div>
-          <div className="mt-14 grid overflow-hidden border border-line shadow-elegant md:grid-cols-2">
-            <div className="flex flex-col justify-center bg-card p-12 text-foreground">
+          <div className="mx-auto mt-14 max-w-3xl overflow-hidden border border-line bg-card shadow-elegant">
+            <div className="p-10 text-foreground sm:p-12">
               <p className="eyebrow">Projetiva Comunicação Visual</p>
               <h3 className="mt-3 text-2xl font-light">Atendimento em Campo Mourão e região</h3>
 
@@ -499,13 +499,6 @@ function Index() {
                 </a>
               </div>
             </div>
-            <iframe
-              src="https://www.google.com/maps?q=R.+Francisco+Ferreira+Albuquerque,+720+-+Centro,+Campo+Mour%C3%A3o+-+PR,+87301-130&output=embed"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Mapa de localização da Projetiva Comunicação Visual"
-              className="min-h-[420px] w-full border-0"
-            />
           </div>
         </div>
       </section>
